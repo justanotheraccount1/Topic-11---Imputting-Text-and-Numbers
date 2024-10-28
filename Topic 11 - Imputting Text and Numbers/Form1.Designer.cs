@@ -30,12 +30,13 @@
         {
             this.txtItem = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.btnCaclulatePrice = new System.Windows.Forms.Button();
             this.lblItem = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.numUpDownQuantity = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // txtItem
@@ -51,13 +52,6 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 20);
             this.txtPrice.TabIndex = 1;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(383, 215);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantity.TabIndex = 2;
             // 
             // btnCaclulatePrice
             // 
@@ -110,21 +104,29 @@
             this.lblTotalPrice.TabIndex = 7;
             this.lblTotalPrice.Text = "Final Price:";
             // 
+            // numUpDownQuantity
+            // 
+            this.numUpDownQuantity.Location = new System.Drawing.Point(383, 215);
+            this.numUpDownQuantity.Name = "numUpDownQuantity";
+            this.numUpDownQuantity.Size = new System.Drawing.Size(100, 20);
+            this.numUpDownQuantity.TabIndex = 8;
+            // 
             // FormInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.numUpDownQuantity);
             this.Controls.Add(this.lblTotalPrice);
             this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblItem);
             this.Controls.Add(this.btnCaclulatePrice);
-            this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtItem);
             this.Name = "FormInput";
             this.Text = "User Input";
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDownQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,12 +136,12 @@
 
         private System.Windows.Forms.TextBox txtItem;
         private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Button btnCaclulatePrice;
         private System.Windows.Forms.Label lblItem;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Label lblTotalPrice;
+        private System.Windows.Forms.NumericUpDown numUpDownQuantity;
     }
 }
 

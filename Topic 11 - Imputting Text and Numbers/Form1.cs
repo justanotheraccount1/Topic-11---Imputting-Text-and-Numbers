@@ -23,7 +23,7 @@ namespace Topic_11___Imputting_Text_and_Numbers
             int quantity;
             double price, totalPrice;
             item = txtItem.Text;
-            quantity = Convert.ToInt32(txtQuantity.Text);
+            quantity = Convert.ToInt32(numUpDownQuantity.Text);
             price = Convert.ToDouble(txtPrice.Text);
             totalPrice = (quantity * price * 1.13);
             lblTotalPrice.Text = "Final Price: " + totalPrice.ToString("C");
